@@ -8,6 +8,11 @@
 
     <title>Some Restaurant</title>
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="animation/fm.revealator.jquery.css">
+    <script src="js/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/animation/fm.revealator.jquery.js"></script>
+
     <!-- Normolize styles -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
@@ -21,7 +26,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body id="top">
     <header class="header">
         <div class="container header-container">
             <a class="header-logo reset-link" href="./">
@@ -58,11 +63,11 @@
             <div class="container hero-container">
                 <div class="info-box">
                     <div class="info-side">
-                        <h1 class="hero-title reset-title">
+                        <h1 class="hero-title reset-title revealator-slideright">
                             Lorem Ipsum is simply dummy <br>
                             text I want to fuck.
                         </h1>
-                        <p class="hero-paragraph reset-paragraph">
+                        <p class="hero-paragraph reset-paragraph revealator-slideright revealator-delay2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
                             the
@@ -75,10 +80,10 @@
                             leap into electronic
                         </p>
                         <ul class="hero-buttons-list reset-list">
-                            <li class="hero-buttons-item reset-button">
+                            <li class="hero-buttons-item reset-button revealator-zoomin">
                                 <button class="gen-btn gen-btn-fr reset-button" type="button">buy now</button>
                             </li>
-                            <li class="hero-buttons-item">
+                            <li class="hero-buttons-item revealator-zoomin revealator-delay2">
                                 <a class="gen-btn gen-btn-thr reset-link" href="./">contacts</a>
                             </li>
                         </ul>
@@ -86,11 +91,11 @@
                     <ul class="hero-preview-img-list reset-list">
                         <li class="hero-preview-img-item">
                             <img class="hero-preview-img" src="./img/index/bottle2.png" alt="preview bottle"
-                                loading="lazy" height="700">
+                                loading="lazy" height="600">
                         </li>
                         <li class="hero-preview-img-item">
                             <img class="hero-preview-img" src="./img/index/bottle2.png" alt="preview bottle"
-                                loading="lazy" height="575">
+                                loading="lazy" height="500">
                         </li>
                     </ul>
                 </div>
@@ -103,14 +108,14 @@
                 </a>
             </div>
         </section>
-        <section class="catalog" id="catalog">
+        <section class="catalog" id="catalog" data-anchor>
             <div class="container catalog-container" id="main-content">
-                <h2 class="catalog-title reset-title">catalog</h2>
+                <h2 class="catalog-title reset-title revealator-fade">catalog</h2>
                 <div class="catalog-info">
                     <img class="catalog-info-preview" src="./img/index/bottle2.png" alt="bottle" height="600">
                     <div class="calatlog-info-box">
-                        <h3 class="catalog-info-box-title reset-title">Title</h3>
-                        <p class="catalog-info-box-paragraph reset-paragraph">
+                        <h3 class="catalog-info-box-title reset-title revealator-fade">Title</h3>
+                        <p class="catalog-info-box-paragraph reset-paragraph revealator-fade">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has
                             been the industry's standard dummy text ever since the 1500s, when an unknown printer
@@ -126,7 +131,7 @@
                             five
                             centuries, but also the leap in...
                         </p>
-                        <button class="catalog-more-button reset-button">
+                        <button class="catalog-more-button reset-button revealator-slideup">
                             <svg width="50" height="50" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg">
                                 <use href="./img/logos.svg#arrow"></use>
                             </svg>
@@ -177,7 +182,17 @@
             </ul>
         </div>
     </footer>
+
+    <a class="reset-link" href="#top" id="anchor">top</a>
+
+    <script type="text/javascript">
+        Revealator.scroll_padding = '100';
+    </script>
+    <script type="text/javascript">
+        Revealator.effects_padding = '-100';
+    </script>
     <script src="./js/index.js"></script>
+    <script src="./js/anchor.js" type="module"></script>
 </body>
 
 </html>
