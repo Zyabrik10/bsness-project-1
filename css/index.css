@@ -254,7 +254,7 @@
 }
 
 .catalog-more-button {
-  margin-bottom: 94px;
+  margin-bottom: 50px;
   display: block;
   background: transparent;
 
@@ -265,4 +265,10 @@
 .catalog-order-button {
   padding: 26px 0;
   min-width: 286px;
+}
+
+.footer-ph-num-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
