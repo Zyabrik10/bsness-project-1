@@ -7,11 +7,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Some Restaurant</title>
-    <link rel="stylesheet" href=".css/index.css">
+
+    <!-- Normolize styles -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Own styles -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container header-container">
+            <a class="header-logo reset-link" href="./">
+                <svg width="139" height="139" viewBox="0 0 137 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./img/logos.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav-list reset-list">
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="#catalog">catalog</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">recipes</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">contacts</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">about</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">basket</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link reset-link" href="./">login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="info-box">
+                    <div class="info-side">
+                        <h1 class="hero-title reset-title">
+                            Lorem Ipsum is simply dummy <br>
+                            text I want to fuck.
+                        </h1>
+                        <p class="hero-paragraph reset-paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
+                            the
+                            leap into electronic
+                        </p>
+                        <ul class="hero-buttons-list reset-list">
+                            <li class="hero-buttons-item reset-button">
+                                <button class="gen-btn gen-btn-fr reset-button" type="button">buy now</button>
+                            </li>
+                            <li class="hero-buttons-item">
+                                <a class="gen-btn gen-btn-thr reset-link" href="./">contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hero-preview-img-list reset-list">
+                        <li class="hero-preview-img-item">
+                            <img class="hero-preview-img" src="./img/index/bottle2.png" alt="preview bottle"
+                                loading="lazy" height="700">
+                        </li>
+                        <li class="hero-preview-img-item">
+                            <img class="hero-preview-img" src="./img/index/bottle2.png" alt="preview bottle"
+                                loading="lazy" height="575">
+                        </li>
+                    </ul>
+                </div>
+                <a class="hero-link-down reset-link" href="#main-content">
+                    Learn more
+                    <svg class="hero-link-down-arrow" width="26" height="24" viewBox="0 0 26 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use href="./img/logos.svg#arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="container catalog-container" id="main-content">
+                <h2 class="catalog-title reset-title">catalog</h2>
+                <div class="catalog-info">
+                    <img class="catalog-info-preview" src="./img/index/bottle2.png" alt="bottle" height="600">
+                    <div class="calatlog-info-box">
+                        <h3 class="catalog-info-box-title reset-title">Title</h3>
+                        <p class="catalog-info-box-paragraph reset-paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five
+                            centuries, but also the leap into electronic
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five
+                            centuries, but also the leap in...
+                        </p>
+                        <button class="catalog-more-button reset-button">
+                            <svg width="50" height="50" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg">
+                                <use href="./img/logos.svg#arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog-order-button gen-btn gen-btn-sc reset-button"
+                            type="button">order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <a class="footer-logo reset-link" href="./">
+                <svg width="139" height="139" viewBox="0 0 137 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./img/logos.svg#logo"></use>
+                </svg>
+            </a>
+            <a class="footer-contacts reset-link" href="tel:+1111111111">111-111-11-11</a>
+        </div>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 
