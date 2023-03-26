@@ -126,7 +126,7 @@
 }
 
 .hero-container {
-  background-image: url("/img/index/bg1.png");
+  background-image: url("../img/index/bg1.png");
   background-repeat: no-repeat;
 
   margin: 0 auto;
@@ -197,7 +197,7 @@
   padding-left: 252px;
   padding-right: 252px;
 
-  background-image: url("/img/index/bg2.png");
+  background-image: url("../img/index/bg2.png");
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 40px;
