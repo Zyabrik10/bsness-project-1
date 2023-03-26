@@ -88,18 +88,21 @@
   padding-bottom: 16px;
 }
 
-.header-nav-list {
+.header-nav-list,
+.footer-nav-list {
   display: flex;
   gap: 24px;
 }
 
-.header-nav-link {
+.header-nav-link,
+.footer-nav-link {
   text-transform: uppercase;
 
   position: relative;
 }
 
-.header-nav-link::before {
+.header-nav-link::before,
+.footer-nav-link::before {
   content: "";
 
   display: block;
@@ -118,7 +121,9 @@
 }
 
 .header-nav-link:hover::before,
-.header-nav-link:focus::before {
+.header-nav-link:focus::before,
+.footer-nav-link:hover::before,
+.footer-nav-link:focus::before {
   width: 100%;
   left: 0;
 
